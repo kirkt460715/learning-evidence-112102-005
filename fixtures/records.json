@@ -1,29 +1,85 @@
 {
   "dataset": "rubric",
+  "catalogs": {
+    "projects": [
+      {
+        "id": "pr-1",
+        "course": "curation",
+        "team": "t-1",
+        "rubric": "r1"
+      },
+      {
+        "id": "pr-1",
+        "course": "curation",
+        "team": "t-1",
+        "rubric": "r2"
+      }
+    ],
+    "roles": [
+      {
+        "id": "role-1",
+        "project": "pr-1",
+        "learner": "l-1"
+      },
+      {
+        "id": "role-2",
+        "project": "pr-1",
+        "learner": "l-2"
+      }
+    ]
+  },
   "records": [
     {
-      "id": "r-01",
-      "work": "w-01",
-      "rubric": "v1",
-      "criterion": "evidence-use",
-      "score": 3,
-      "revision_reason": "rejected-counterexample"
+      "id": "r-1",
+      "kind": "artifact-review",
+      "project": "pr-1",
+      "rubric": "r1",
+      "status": "meets-standard",
+      "reviewer": "curator"
     },
     {
-      "id": "r-02",
-      "work": "w-01",
-      "rubric": "v2",
-      "criterion": "evidence-and-reasoning",
-      "score": 4,
-      "revision_reason": "combined-criterion"
+      "id": "r-2",
+      "kind": "decision-log",
+      "project": "pr-1",
+      "learner": "l-1",
+      "decision": "selected-source",
+      "reason": "primary-record",
+      "at": "2026-09-03T10:00:00"
     },
     {
-      "id": "r-03",
-      "work": "w-02",
-      "rubric": "v2",
-      "criterion": "evidence-and-reasoning",
-      "score": 2,
-      "revision_reason": "not-recorded"
+      "id": "r-3",
+      "kind": "decision-log",
+      "project": "pr-1",
+      "learner": "l-2",
+      "decision": "reframed-claim",
+      "reason": "counterexample",
+      "at": "2026-09-04T11:00:00"
+    },
+    {
+      "id": "r-4",
+      "kind": "membership-change",
+      "project": "pr-1",
+      "learner": "l-2",
+      "event": "left-team",
+      "at": "2026-09-05T09:00:00"
+    },
+    {
+      "id": "r-5",
+      "kind": "individual-review",
+      "project": "pr-1",
+      "learner": "l-1",
+      "target": "independent-curation",
+      "status": "pending",
+      "rubric": "r2"
+    },
+    {
+      "id": "r-6",
+      "kind": "individual-review",
+      "project": "pr-1",
+      "learner": "l-2",
+      "target": "independent-curation",
+      "status": "not-scheduled",
+      "rubric": "r2"
     }
   ]
 }
