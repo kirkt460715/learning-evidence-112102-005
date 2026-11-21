@@ -1,0 +1,29 @@
+{
+  "dataset": "rubric",
+  "records": [
+    {
+      "id": "r-01",
+      "work": "w-01",
+      "rubric": "v1",
+      "criterion": "evidence-use",
+      "score": 3,
+      "revision_reason": "rejected-counterexample"
+    },
+    {
+      "id": "r-02",
+      "work": "w-01",
+      "rubric": "v2",
+      "criterion": "evidence-and-reasoning",
+      "score": 4,
+      "revision_reason": "combined-criterion"
+    },
+    {
+      "id": "r-03",
+      "work": "w-02",
+      "rubric": "v2",
+      "criterion": "evidence-and-reasoning",
+      "score": 2,
+      "revision_reason": "not-recorded"
+    }
+  ]
+}
